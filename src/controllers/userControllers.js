@@ -1,4 +1,5 @@
-const userServices = require('../services/userServices');
+// const userServices = require('../services/userServices');
+import userServices from "../services/userServices.js";
 
 const getAllUsers = (req,res)=>{
   const users = userServices.getAllUsers();
@@ -34,10 +35,18 @@ const deleteUser = (req,res)=>{
   });
 };
 
-module.exports = {
+export default {
   getAllUsers,
   getUser,
   createUser,
   updateUser,
   deleteUser
-};
+}
+
+// module.exports = {
+//   getAllUsers,
+//   getUser,
+//   createUser,
+//   updateUser,
+//   deleteUser
+// };

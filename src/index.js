@@ -1,4 +1,5 @@
-const express = require('express');
+import express from 'express';
+import userRouter from "./routes/userRoutes.js";
 
 // Create a new express application instance
 const app = express();
@@ -13,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // routers 
-app.use('/users', require('./routes/userRoutes'));
+app.use('/users', userRouter);
 
 // Routes
 app.get('/', (req, res) => res.json({message:'Hello World!'}));

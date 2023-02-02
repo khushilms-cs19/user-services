@@ -47,10 +47,18 @@ const deleteUser = (userId)=>{
   return user;
 };
 
-module.exports = {
-  getAllUsers,
-  getUser,
-  createUser,
-  updateUser,
-  deleteUser
-};
+export default {
+    getAllUsers,
+    getUser,
+    createUser,
+    updateUser,
+    deleteUser
+}
+
+// module.exports = {
+//   getAllUsers,
+//   getUser,
+//   createUser,
+//   updateUser,
+//   deleteUser
+// };
