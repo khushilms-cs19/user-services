@@ -1,5 +1,5 @@
 import express from 'express';
-import userRouter from "./routes/userRoutes.js";
+import userRouter from './routes/userRoutes.js';
 
 // Create a new express application instance
 const app = express();
@@ -17,6 +17,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/users', userRouter);
 
 // Routes
-app.get('/', (req, res) => res.json({message:'Hello World!'}));
+app.get('/', (req, res) => res.json({ message: 'Hello World!' }));
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
